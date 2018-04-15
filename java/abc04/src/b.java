@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+/**
+ * Created by ryosuke on 2017/04/05.
+ */
+public class b {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        StringBuffer[] input = new StringBuffer[4];
+
+        for (int i = 0; i < 4; i++) {
+            input[i] = new StringBuffer(scanner.nextLine());
+        }
+
+        for (int i = 0; i < 4; i++) {
+            System.out.println(input[3-i].reverse().toString());
+        }
+    }
+}
